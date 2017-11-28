@@ -1,0 +1,105 @@
+* {  
+    -webkit-font-smoothing: antialiased;
+}
+html{ font-size:62.5%;-webkit-overflow-scrolling: touch;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%;-ms-font-feature-settings: inherit; }
+body{font-family: Arial,Verdana, sans-serif;color:#000;background-color:#f1f1f1;height:100%;}
+body>div, h1,h2,p{transition:all .3s ease;-webkit-transition:all .3s ease;}
+svg {display: block;}
+a:focus,a:visited,a:active {outline:0;}
+.close-x {stroke: black;fill: transparent;stroke-linecap: round;stroke-width: 5;}
+/*fonts*/
+@font-face {
+        font-family: NewTransportBold;
+		font-style: normal;
+  		font-weight: 400;
+        src: url('../fonts/NewTransportAA-Bold.otf');
+		src: url('../fonts/New Transport AA-Bold.ttf') format('truetype');
+		 /* Support for all WebKit browsers. */
+  		-webkit-font-smoothing: antialiased;
+ 		 /* Support for Safari and Chrome. */
+  		text-rendering: optimizeLegibility;
+
+  		/* Support for Firefox. */
+  		-moz-osx-font-smoothing: grayscale;
+
+  		/* Support for IE. */
+  		font-feature-settings: 'liga';
+        }
+         @font-face {
+        font-family: NewTransportRegular;
+		font-style: normal;
+  		font-weight: 400;
+        src: url('../fonts/NewTransportAA-Regular.otf');
+		src: url('../fonts/New Transport AA-Regular.ttf') format('truetype');
+		 /* Support for all WebKit browsers. */
+ 		 -webkit-font-smoothing: antialiased;
+ 		 /* Support for Safari and Chrome. */
+  		text-rendering: optimizeLegibility;
+
+  		/* Support for Firefox. */
+  		-moz-osx-font-smoothing: grayscale;
+
+  		/* Support for IE. */
+  		font-feature-settings: 'liga';
+        }
+.container-fluid{ padding-left:10px; padding-right:10px}
+.row{margin-left:-10px; margin-right:-10px}
+.col-md-12, .col-xs-12{padding-left:10px; padding-right:10px}
+
+.content{padding-top:50px;}
+h1, h2,h3,h4,h5, h6{margin-top:0;font-family: "NewTransportBold";}
+p{font-family:Arial, Verdana, Sans-serif; margin:0 0 13px 0;font-size: 14px;  line-height: 22px;  text-align: left;  color: #1d1d1d;}
+h1{font-size: 18px;  font-weight: bold; line-height: 1.39;  letter-spacing: 0.1px;  text-align: left;  color: #1d1d1d;}
+
+header{position:fixed; width:100%;height:48px; }
+header h1{ font-size:20px; line-height:25px;text-align: center;    padding-top: 19px;    padding-bottom: 20px;      margin-top: 0px;    margin-bottom: 0px;    font-family: "NewTransportBold";}
+.brand{height:40px;width: 100%;    background-color: #fff;    box-shadow: none;    border-bottom: 1px solid #dcddde;}
+#logo{position: absolute;    z-index: 2;    background: url(../images/logo.png);    background-repeat: no-repeat;    background-size: 178px;
+    background-position-x: -92px;    background-position-y: -12px;    width: 89px;    height: 48px;    left: 0;    top: 0;}
+.progress{width: 100%;  margin-bottom:10px;     border-radius: 0px;       height: 4px;    background-color: #e4e4e4;    box-shadow: none;}
+.progress-bar{box-shadow: none;    position: relative;     /*  border-top-right-radius: 2px; border-bottom-right-radius: 2px;  */  background: #07828d;}
+.progress-bar-plan{box-shadow: none;position: relative;border-top-right-radius: 0;background:#07828d;width:33%;}
+.progress-bar-head{box-shadow: none;position: relative;border-top-right-radius: 0;background:#07828d;width:66%;}
+.progress-bar-arrvd{box-shadow: none;position: relative;border-top-right-radius: 0;background:#07828d;width:100%;}
+
+
+.box{border: 1px solid #dcddde; background:#fff;         padding: 18px 25px;  margin-bottom: 10px;}
+
+.bullet-list{font-family:Arial, Verdana, Sans-serif; padding-left:25px;}
+.bullet-list li{font-size: 14px;  line-height: 22px;  text-align: left;  color: #1d1d1d;}
+
+.steps-nav{ float:right;margin-right: 20px; margin-top:10px;   position: relative;    right: 0;}
+.steps-nav a{font-size: 16px;color: #000;font-weight:bold;letter-spacing: -0.1px; line-height:20px;  padding-right: 38px;display: block;position: relative; }
+.steps-nav a:after{    background: url(../images/accordion-arrow-down.png) no-repeat 0 0 transparent;    background-size: 17px 11px;
+content: "";    display: block;    height: 11px;    position: absolute;    right: 0;    top: 6px;    transition: all .2s ease;    width: 17px;
+ }
+ .steps-nav a.active:after{background: url(../images/close-icon-dark-x2.png) no-repeat 0 0 transparent;    background-size: 15px;
+content: "";    display: block;    height: 15px;    position: absolute;    right: 0;    top: 3px;    transition: all .2s ease;    width: 15px;  }	
+
+
+
+.box a {color: #07828d;    font-weight: bold;text-decoration:none;outline:0;}
+box a:hover, box a:visited{color:#000;text-decoration:none;outline:0;}
+
+.btn-full-width, .btn-full-width:hover, .btn-full-width:active, .btn-full-width:focus{width:100%;border-radius:4px;border:#FBC000 solid 1px;color:black;font-size:18px;font-weight:bold;height:40px;line-height:20px;background-image: linear-gradient(to bottom, #ffcc00, #f9b800) !important;box-shadow: inset 0px 1px 1px #fff,0px 0px 10px rgba(0, 0, 0,.2);font-family: "NewTransportBold";background-color: #ffcc00;border-color: #ffcc00;}
+.btn-start{margin:8px 0}
+
+
+
+
+/*loader*/
+.page-loader { position: absolute; display: none; left: 0; top: 0; z-index: 10; height: 100%; width: 100%; background-color: transparent; }
+#loader { background-color: #dcddde; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10; }
+#loader > span { -moz-background-size: 16px 16px; -ms-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); background-image: url('../images/icons/processing.gif'); background-position: 50% 50%; background-repeat: no-repeat; background-size: 16px 16px; display: block; height: 100%; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 100%; }
+
+ 
+/*back next butons*/
+.report-footer  button{ padding:0; margin-top:10px; font-size: 16px; font-weight:bold;    line-height: 24px;   background: none;    border: none;    color: #07818c;}
+.report-footer  button.prev img{ margin-right:6px;}
+.report-footer  button span{display: inline-block;    vertical-align: middle;}
+.report-footer  button.prev {float: left;}
+ 
+/*target firefox only*/
+@-moz-document url-prefix() {
+    #logo { background-size:88px 44px}
+}
